@@ -22,8 +22,6 @@ RUN apk add --update ca-certificates \
  && rm /var/cache/apk/* \
  && rm -f /helm-${HELM_LATEST_VERSION}-linux-amd64.tar.gz
 
-RUN helm init --client-only
-
 COPY ["src", "/src/"]
 
 ENTRYPOINT ["/src/main.sh"]
