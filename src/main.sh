@@ -106,6 +106,7 @@ function installTerraform {
 function main {
   helm init --client-only
   helm repo add statcan https://statcan.github.io/charts
+  helm repo update
 
   # Source the other files to gain access to their functions
   scriptDir=$(dirname ${0})
