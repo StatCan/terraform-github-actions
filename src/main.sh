@@ -107,6 +107,8 @@ function main {
   helm init --client-only
   helm repo add statcan https://statcan.github.io/charts
   helm repo update
+  
+  helm search statcan/velero 
 
   # Source the other files to gain access to their functions
   scriptDir=$(dirname ${0})
