@@ -106,6 +106,7 @@ function installTerraform {
 function main {
   helm init --client-only
   helm repo add statcan https://statcan.github.io/charts
+  helm repo add jetstack https://charts.jetstack.io
   helm repo update
   
   helm search statcan/velero 
