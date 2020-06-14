@@ -107,6 +107,7 @@ function main {
   helm init --client-only
   helm repo add statcan https://statcan.github.io/charts
   helm repo add jetstack https://charts.jetstack.io
+  helm repo add appidentityandaccessadapter https://raw.githubusercontent.com/ibm-cloud-security/app-identity-and-access-adapter/master/helm/appidentityandaccessadapter
   helm repo update
   
   helm search statcan/velero 
